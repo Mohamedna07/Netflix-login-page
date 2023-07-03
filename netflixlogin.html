@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="netflixlogin.css" >
+    
+    <title>Netflix LogIn Page</title>
+</head>
+<body>
+
+    <form action="" class="form">
+
+        <div >
+        <h1 class="sign">Sign In</h1>
+    </div>
+
+        <br>
+
+<div class="inputbox">
+        <input type="text" class="input" placeholder="Enter Your User Name" id="username" required>
+    </div>
+
+        <br>
+
+    <div class="inputbox">
+        <input type="password" class="input" placeholder="Password" id="password" required>
+        
+      </div>
+      
+
+     
+      
+
+      <br>
+       
+        <input type="submit" class="btn" value="Sign In" onclick="validate()" required>
+        <div class="ch">
+       
+            <input type="checkbox"  id="check" required> <label for="check" class="checkbox">Remember Me</label>
+            
+            <a href="#" align="right" class="a">Need Help ?</a>
+            
+                  </div>
+            
+
+
+
+
+
+
+    </form>
+    <script>
+
+function validate(){
+
+    let username=document.getElementById("username").value;
+
+    let password=document.getElementById("password").value;
+
+
+    if(password.length==8 && password==12345678){
+        alert("Success");
+    }else{
+        alert("Wrong");
+    }
+
+
+
+    // if(username=="Mohamed N A" && password==12345){
+
+    //     alert("Hi, "+username+" Log in Success!!");
+
+    // }else{
+
+    //     alert("Sorry, Try Again !");
+    // }
+}
+
+
+    </script>
+
+    
+</body>
+</html>
